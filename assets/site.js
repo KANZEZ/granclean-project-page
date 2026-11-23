@@ -6,11 +6,9 @@
   if (!video || !placeholder || video.dataset.ready !== "true") return;
 
   const message = placeholder.querySelector("p");
-  message.textContent = "Loading video…";
-  video.addEventListener("loadedmetadata", () => {
-    placeholder.hidden = true;
-    video.hidden = false;
-  }, { once: true });
+  // Show the slide poster immediately, including while metadata is loading.
+  placeholder.hidden = true;
+  video.hidden = false;
   video.addEventListener("error", () => {
     video.hidden = true;
     placeholder.hidden = false;
