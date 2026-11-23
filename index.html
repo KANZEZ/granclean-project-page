@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="GranClean learns reusable granular-cleanup skills from one demonstration and combines them with optimal transport regrouping and Bayesian optimization contact adaptation.">
+  <meta name="description" content="GranuClean learns reusable granular-cleanup skills from one demonstration and combines them with optimal transport regrouping and Bayesian optimization contact adaptation.">
   <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'self'; script-src 'self'; media-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'">
   <meta name="color-scheme" content="light">
-  <title>GranClean: One-Shot Imitation and Online Recovery</title>
+  <title>GranuClean: One-Shot Imitation and Online Recovery</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/site.js" defer></script>
@@ -19,7 +19,7 @@
   <header class="hero" id="top">
     <div class="container">
       <p class="review-label">Anonymous submission</p>
-      <h1><span class="project-name">GranClean</span><span class="paper-title">Learning to Clean Up Granular Material<br class="desktop-break"> with One-Shot Imitation and Online Recovery</span></h1>
+      <h1><span class="project-name">GranuClean</span><span class="paper-title">Learning to Clean Up Granular Material<br class="desktop-break"> with One-Shot Imitation and Online Recovery</span></h1>
       <nav class="resource-links" aria-label="Project resources">
         <a class="resource-link primary" href="paper.pdf" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 16h6"/></svg>
@@ -46,7 +46,7 @@
               <span class="video-description">Method overview &amp; real-world cleanup demonstrations</span>
             </div>
           </div>
-          <video id="overview-video" controls playsinline preload="none" poster="assets/images/video-poster.webp" data-ready="true" data-src="assets/video/overview.mp4" aria-label="GranClean method overview and real-world cleanup demonstrations" hidden>
+          <video id="overview-video" controls playsinline preload="none" poster="assets/images/video-poster.webp" data-ready="true" data-src="assets/video/overview.mp4" aria-label="GranuClean method overview and real-world cleanup demonstrations" hidden>
             Your browser does not support HTML video.
           </video>
         </div>
@@ -68,10 +68,10 @@
         </div>
         <figure class="framework-figure">
           <a class="figure-link" href="assets/images/framework.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full-resolution framework figure">
-            <img src="assets/images/framework.png" width="2530" height="1085" loading="lazy" decoding="async" alt="GranClean framework: a behavior tree selects skills from an offline motion library; optimal transport regroups scattered material, and Bayesian optimization adjusts sweep height and tool tilt when contact is ineffective.">
+            <img src="assets/images/framework.png" width="2530" height="1085" loading="lazy" decoding="async" alt="GranuClean framework: a behavior tree selects skills from an offline motion library; optimal transport regroups scattered material, and Bayesian optimization adjusts sweep height and tool tilt when contact is ineffective.">
           </a>
         </figure>
-        <p class="method-description">GranClean learns reusable <strong>SE(3) LPV-DS motion skills</strong> from a single cleanup demonstration. A behavior tree coordinates closed-loop skill execution, shown by solid arrows, while dashed arrows connect the two online recovery mechanisms. <strong>Optimal transport (OT)</strong> regroups scattered material toward the demonstrated pile region. <strong>Bayesian optimization (BO)</strong> adjusts sweep height and tool tilt when contact with novel materials is ineffective. Together, these mechanisms support skill reuse without additional demonstrations or policy retraining.</p>
+        <p class="method-description">GranuClean learns reusable <strong>SE(3) LPV-DS motion skills</strong> from a single cleanup demonstration. A behavior tree coordinates closed-loop skill execution, shown by solid arrows, while dashed arrows connect the two online recovery mechanisms. <strong>Optimal transport (OT)</strong> regroups scattered material toward the demonstrated pile region. <strong>Bayesian optimization (BO)</strong> adjusts sweep height and tool tilt when contact with novel materials is ineffective. Together, these mechanisms support skill reuse without additional demonstrations or policy retraining.</p>
       </div>
     </section>
 
@@ -85,6 +85,7 @@
           <a class="figure-link" href="assets/images/setup-and-materials.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full-resolution experimental setup and materials figure">
             <img src="assets/images/setup-and-materials.png" width="2520" height="750" loading="lazy" decoding="async" alt="Dual-UR5 setup with a broom, dustpan and collection container, alongside material and layout scenarios M1 to M14. M1, a compact pile of red cubes, is used for the demonstration.">
           </a>
+          <figcaption><strong>Experimental setup and granular material scenarios.</strong> Two UR5 manipulators use a broom and a dustpan to collect granular material and transfer it into a container, while an Intel RealSense D415 camera observes the workspace. The single demonstration is collected using M1, a compact pile of red cubes. M2–M14 cover different material types, spatial layouts, and mixtures for evaluating skill generalization and online recovery.</figcaption>
         </figure>
 
         <div class="result-intro">
@@ -101,7 +102,7 @@
               <tr><th scope="row">Heuristic</th><td>84.3 <span class="sd">± 4.8</span></td><td>93.7 <span class="sd">± 3.0</span></td><td>90.3 <span class="sd">± 3.7</span></td><td>85.5 <span class="sd">± 5.6</span></td><td>82.4 <span class="sd">± 2.0</span></td><td>71.8 <span class="sd">± 5.3</span></td></tr>
               <tr><th scope="row">TT</th><td>32.9 <span class="sd">± 11.2</span></td><td>11.0 <span class="sd">± 4.5</span></td><td>21.8 <span class="sd">± 3.3</span></td><td>19.2 <span class="sd">± 12.6</span></td><td>38.5 <span class="sd">± 5.8</span></td><td>15.5 <span class="sd">± 4.9</span></td></tr>
               <tr><th scope="row">TT w/ Recovery</th><td>80.4 <span class="sd">± 3.6</span></td><td>85.9 <span class="sd">± 3.1</span></td><td>95.8 <span class="sd">± 1.9</span></td><td>86.7 <span class="sd">± 2.4</span></td><td>77.6 <span class="sd">± 5.3</span></td><td>76.3 <span class="sd">± 5.3</span></td></tr>
-              <tr class="ours"><th scope="row">GranClean (ours)</th><td><strong>93.3</strong> <span class="sd">± 3.0</span></td><td><strong>98.0</strong> <span class="sd">± 1.4</span></td><td><strong>97.8</strong> <span class="sd">± 1.1</span></td><td><strong>93.3</strong> <span class="sd">± 5.4</span></td><td><strong>87.1</strong> <span class="sd">± 4.0</span></td><td><strong>89.5</strong> <span class="sd">± 4.3</span></td></tr>
+              <tr class="ours"><th scope="row">GranuClean (ours)</th><td><strong>93.3</strong> <span class="sd">± 3.0</span></td><td><strong>98.0</strong> <span class="sd">± 1.4</span></td><td><strong>97.8</strong> <span class="sd">± 1.1</span></td><td><strong>93.3</strong> <span class="sd">± 5.4</span></td><td><strong>87.1</strong> <span class="sd">± 4.0</span></td><td><strong>89.5</strong> <span class="sd">± 4.3</span></td></tr>
             </tbody>
           </table>
         </div>
@@ -114,7 +115,7 @@
                 <tr><th scope="row">Heuristic</th><td>46.0 <span class="sd">± 4.4</span></td><td>87.0 <span class="sd">± 4.0</span></td><td>101.3 <span class="sd">± 6.1</span></td><td>92.0 <span class="sd">± 3.6</span></td><td>79.3 <span class="sd">± 7.6</span></td><td>106.0 <span class="sd">± 10.4</span></td></tr>
                 <tr><th scope="row">TT</th><td>120.0 <span class="sd">± 0.0</span></td><td>120.0 <span class="sd">± 0.0</span></td><td>120.0 <span class="sd">± 0.0</span></td><td>120.0 <span class="sd">± 0.0</span></td><td>120.0 <span class="sd">± 0.0</span></td><td>120.0 <span class="sd">± 0.0</span></td></tr>
                 <tr><th scope="row">TT w/ Recovery</th><td><strong>33.3</strong> <span class="sd">± 3.1</span></td><td>40.3 <span class="sd">± 1.5</span></td><td>66.7 <span class="sd">± 5.9</span></td><td>57.0 <span class="sd">± 8.2</span></td><td><strong>57.0</strong> <span class="sd">± 7.9</span></td><td>84.3 <span class="sd">± 5.7</span></td></tr>
-                <tr class="ours"><th scope="row">GranClean (ours)</th><td>35.7 <span class="sd">± 4.2</span></td><td><strong>37.7</strong> <span class="sd">± 2.5</span></td><td><strong>64.0</strong> <span class="sd">± 6.0</span></td><td><strong>54.0</strong> <span class="sd">± 7.0</span></td><td>65.0 <span class="sd">± 5.3</span></td><td><strong>79.3</strong> <span class="sd">± 4.7</span></td></tr>
+                <tr class="ours"><th scope="row">GranuClean (ours)</th><td>35.7 <span class="sd">± 4.2</span></td><td><strong>37.7</strong> <span class="sd">± 2.5</span></td><td><strong>64.0</strong> <span class="sd">± 6.0</span></td><td><strong>54.0</strong> <span class="sd">± 7.0</span></td><td>65.0 <span class="sd">± 5.3</span></td><td><strong>79.3</strong> <span class="sd">± 4.7</span></td></tr>
               </tbody>
             </table>
           </div>
@@ -162,7 +163,7 @@
         <ul class="takeaway-list">
           <li>A single cleanup demonstration provides reusable motion skills without additional demonstrations or policy retraining.</li>
           <li>OT regrouping addresses spatial mismatch, while BO adapts tool contact to unfamiliar material properties.</li>
-          <li>GranClean achieves a <strong>93.2%</strong> mean cleanup rate across six unseen scenarios.</li>
+          <li>GranuClean achieves a <strong>93.2%</strong> mean cleanup rate across six unseen scenarios.</li>
         </ul>
       </div>
     </section>
